@@ -5,7 +5,9 @@
     "focusBorder": "#568AF2",
     "foreground": "#DDEFF1",
     "widget.shadow": "#161b1e",
-    "selection.background": "#007acc",
+    // 定义用户在界面中选中文本或列表项时的背景颜色。
+    // 例如，当您用鼠标拖动选择代码时，背景就会显示这个颜色。
+    "selection.background": "#254D75B3",
     "errorForeground": "#E06C75",
 
     "button.background": "#007acc",
@@ -38,18 +40,19 @@
 
     "progressBar.background": "#3a4449",
 
-    "list.activeSelectionBackground": "#264F78",
+    "list.hoverBackground": "#244866",
+    "list.focusBackground": "#264F78",
+    "list.activeSelectionBackground": "#2A578A",
+
     "list.activeSelectionForeground": "#DDEFF1",
     "list.dropBackground": "#21252Bbf",
-    "list.focusBackground": "#264F78",
     "list.highlightForeground": "#DDEFF1",
-    "list.hoverBackground": "#264F78",
     "list.inactiveSelectionBackground": "#264F78",
     "list.inactiveSelectionForeground": "#ffed72",
     "list.hoverForeground": "#DDEFF1",
     "list.focusForeground": "#DDEFF1",
 
-    "activityBar.background": "#282C34",
+    "activityBar.background": "#252A32",
     "activityBar.dropBackground": "#21252Bbf",
     "activityBar.foreground": "#8b9798",
     "activityBar.border": "#161b1e",
@@ -60,7 +63,7 @@
     "sideBar.foreground": "#8b9798",
     "sideBar.border": "#161b1e",
     "sideBarTitle.foreground": "#545f62",
-    "sideBarSectionHeader.background": "#282C34",
+    "sideBarSectionHeader.background": "#252A32",
     "sideBarSectionHeader.foreground": "#6b7678",
 
     "editorGroup.background": "#181A1F",
@@ -69,25 +72,46 @@
     "editorGroupHeader.noTabsBackground": "#21252B",
     "editorGroupHeader.tabsBackground": "#21252B",
 
+    // tabs
+    // 优化版
+    "tab.activeBackground": "#254D75",
+    "tab.hoverBackground": "#254D7588", // 背景不变
+    "tab.hoverBorder": "#3A6A9A", // 仅用边框提示
+    "tab.inactiveBackground": "#1F2A33",
+    // 当前焦点tab的上边框色
+    "tab.activeBorderTop": "#4A83E866",
+    // 当前焦点tab的下边框色
+    "tab.activeBorder": "#DDEFF199",
 
-    "tab.activeBackground": "#264F78",
+    // 影响tab中字体色
     "tab.activeForeground": "#DDEFF1",
-    "tab.activeBorder": "#DDEFF1",
+
+    "tab.unfocusedInactiveBackground": "#21252B",
+    "tab.inactiveForeground": "#8B9798",
+
+    "tab.unfocusedActiveBackground": "#254D75",
+    "tab.unfocusedActiveForeground": "#B8C4C3",
+
+    "tab.border": "#181A1F",
 
     "tab.unfocusedActiveBorder": "#8b9798",
-    "tab.border": "#181A1F",
-    "tab.inactiveBackground": "#21252B",
-    "tab.inactiveForeground": "#8b9798",
-    "tab.unfocusedActiveForeground": "#b8c4c3",
     "tab.unfocusedInactiveForeground": "#8b9798",
 
-    "editor.background": "#282C34",
+    // 编辑区域主背景色
+    "editor.background": "#252A32",
     "editor.foreground": "#DDEFF1",
     "editorLineNumber.foreground": "#636D83",
 
-    "editor.selectionBackground":"#254D75",
-    "editor.selectionHighlightBackground":"#3C4049",
-    "editor.selectionHighlightBorder": "#DDEFF160",
+    // 拖拽、光标移动后选中
+    "editor.selectionBackground": "#254D75", // 主选区
+    "editor.selectionForeground": "#ff6d7e", // 主选区字体颜色
+
+    "editor.inactiveSelectionBackground": "#2E6FD644", // 非焦点编辑器
+
+    // 拖选后自动高亮相同文本背景色（弱提示）
+    "editor.selectionHighlightBackground": "#3A6A9A2E",
+    // 拖选后自动高亮相同文本边框（弱提示）
+    "editor.selectionHighlightBorder": "#568AF288",
 
     "editorCursor.background": "#ffffffc9",
     "editorCursor.foreground": "#568AF2",
@@ -95,17 +119,22 @@
     "editorBracketMatch.border": "#DDEFF1",
     "editorBracketMatch.background": "#515a6b",
 
-    "editor.findMatchBackground":"#007acc60",
+    "editor.findMatchBackground": "#007acc60",
     "editor.findMatchBorder": "#DDEFF160",
-    "editor.findMatchHighlightBackground":"#254D7560",
+    "editor.findMatchHighlightBackground": "#254D7560",
 
-    "editor.wordHighlightBackground":"#007acc",
-    "editor.wordHighlightBorder": "#7f848e",
-    "editor.wordHighlightStrongBackground":"#254D75",
-    "editor.wordHighlightStrongBorder": "#7f848e",
+    // 点击获得焦点的单词（变量）背景色， 光标停在某个变量/函数名上
+    "editor.wordHighlightBackground": "#61AFEF26",
+    // 点击获得焦点的单词（变量）边框， 光标停在某个变量/函数名上
+    "editor.wordHighlightBorder": "#61AFEF4D",
+    // 选中变量的入口变量背景色
+    "editor.wordHighlightStrongBackground": "#98C3793A",
+    "editor.wordHighlightStrongBorder": "#98C37966",
 
-    "editor.lineHighlightBackground": "#2C313A",
-    "editor.lineHighlightBorder":"#254D75",
+    // 当前光标所在行的背景色
+    "editor.lineHighlightBackground": "#3A6A9A33",
+    // 当前光标所在行的上下边框色
+    "editor.lineHighlightBorder": "#3A6A9A44",
 
     "editorWhitespace.foreground": "#3C4049",
 
@@ -128,8 +157,8 @@
     "peekViewTitle.background": "#1B1D23",
     "peekViewEditor.background": "#1B1D23",
 
-    "statusBar.background":"#007acc",
-    "statusBar.foreground":"#DDEFF1",
+    "statusBar.background": "#007acc",
+    "statusBar.foreground": "#DDEFF1",
 
     "titleBar.activeBackground": "#21252B",
     "titleBar.activeForeground": "#9DA5B4",
@@ -166,7 +195,6 @@
     "welcomePage.buttonBackground": "#1B1D23",
     "welcomePage.buttonHoverBackground": "#9DA5B4",
     "walkThrough.embeddedEditorBackground": "#21252B"
-
   },
   "tokenColors": [
     {
@@ -223,10 +251,7 @@
     },
     {
       "name": "Template Definition",
-      "scope": [
-        "punctuation.definition.template-expression",
-        "punctuation.section.embedded.coffee"
-      ],
+      "scope": ["punctuation.definition.template-expression", "punctuation.section.embedded.coffee"],
       "settings": {
         "foreground": "#E06C75"
       }
@@ -247,10 +272,7 @@
     },
     {
       "name": "User-defined constant",
-      "scope": [
-        "constant.character",
-        "constant.other"
-      ],
+      "scope": ["constant.character", "constant.other"],
       "settings": {
         "foreground": "#baa0f8"
       }
@@ -351,10 +373,7 @@
     },
     {
       "name": "Library class/type",
-      "scope": [
-        "support.type",
-        "support.class"
-      ],
+      "scope": ["support.type", "support.class"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#61AFEF"
@@ -393,10 +412,7 @@
     },
     {
       "name": "diff.header",
-      "scope": [
-        "meta.diff",
-        "meta.diff.header"
-      ],
+      "scope": ["meta.diff", "meta.diff.header"],
       "settings": {
         "foreground": "#75715E"
       }
