@@ -7,6 +7,9 @@
   "categories": [
     "Themes"
   ],
+  "engines": {
+    "vscode": "^1.50.0"
+  },
   "icon": "icon.png",
   "homepage": "https://github.com/afarwind/comfy-monokai/blob/master/README.md",
   "repository": {
