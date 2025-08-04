@@ -8,6 +8,18 @@ A modern, minimal, and eye-friendly VS Code theme inspired by [Monokai](https://
 
 ---
 
+## ⚙️ Recommended VS Code Settings
+
+To fully enjoy this theme’s semantic color highlighting, please add the following setting:
+
+```jsonc
+// settings.json
+"editor.semanticHighlighting.enabled": true
+
+```
+
+---
+
 ## 🎨 Semantic Color Table
 
 This theme uses **semantic token colors** to improve readability and future maintainability.
@@ -50,3 +62,7 @@ This theme uses **semantic token colors** to improve readability and future main
 
 - [Visual Studio Marketplace]().
 - [GitHub repository](https://github.com/afarwind/comfy-monokai).
+
+```
+
+```
